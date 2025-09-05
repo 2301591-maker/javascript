@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+
+    function toggleNotes() {
+      var notes = document.getElementById("ShowNotes");
+      var button = document.getElementById("showNotesButton");
+
+      if (notes.style.display === "none") {
+        notes.style.display = "block";
+        button.textContent = "Hide Notes";
+      } else {
+        notes.style.display = "none";
+        button.textContent = "Show Notes";
+      }
+    }
+
+  </script>
+
+</head>
+<body>
+
+  <h1>Welcome to Javascript Tutorial</h1>
+
+  <div id="ShowNotes" style="display: none;">
+    <p id="demoText">Important Notes!</p>
+    <ul>
+      <li>JavaScript and Java are two different programming languages both in concept and design.</li>
+      <li>JavaScript is primarily used for client-side scripting in web browsers.</li>
+      <li>JavaScript can also be used on the server-side with environments like Node.js.</li>
+      <li>JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.</li>
+      <li>ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.</li>
+    </ul>
+
+
+    <h2>Activity</h2>
+    <p>A. Follow the steps below to set up your JavaScript development environment.</p>
+
+    <ol>
+        <li>Install Visual Studio Code and Live Server Extension.</li>
+        <li>Add your first JS project folder</li>
+        <li>Create an HTML file</li>
+        <li>Code your first JavaScript program</li>
+        <li>Run it via Live Server</li>
+    </ol>
+
+    <p>B. Read, analyze and explore the following links to understand the basics of JavaScript.</p>
+    <ul>
+      <li><a href="https://www.w3schools.com/js/js_intro.asp" target="_blank">JS Introduction</a></li>
+      <li><a href="https://www.w3schools.com/js/js_versions.asp" target="_blank">JS Versions</a></li>
+      <li><a href="https://www.w3schools.com/js/js_statements.asp" target="_blank">JS Statements</a></li>
+      <li><a href="https://www.w3schools.com/js/js_variables.asp" target="_blank">JS Variables</a></li>
+      <li><a href="https://www.w3schools.com/js/js_let.asp" target="_blank">JS let</a></li>
+      <li><a href="https://www.w3schools.com/js/js_const.asp" target="_blank">JS const</a></li>
+      <li><a href="https://www.w3schools.com/js/js_operators.asp" target="_blank">JS Operators</a></li>
+    </ul>
+    <h4>Try the examples!</h4>
+  </div>
+
+  <div>
+    <h2>Next week topic</h2>
+    <p>Next week we will learn about Functions and Objects.</p>
+  </div>
+
+  <button id="showNotesButton" onclick="toggleNotes()">Show Notes</button>
+
+  </ul>
+
+</body>
+</html>
